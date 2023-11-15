@@ -6,7 +6,7 @@ BUILD ?= BUILD_DEBUG
 
 CC := emcc
 RUNNER := emrun
-COMPILER_FLAGS := -Os -Wall -I/usr/local/include -s USE_GLFW=3 -s ASYNCIFY --preload-file assets --shell-file shell.html
+COMPILER_FLAGS := -Os -Wall -I/usr/local/include -s USE_GLFW=3 -s ASYNCIFY --preload-file assets --shell-file data/shell.html
 SRC_FILES := $(wildcard src/*.c) $(wildcard src/*/*.c) libraylib.a
 
 # ----------------------------------------------------------------------------------
